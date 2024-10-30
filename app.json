@@ -1,0 +1,8 @@
+{
+    "expo": {
+      "name": "Aplicativo CAA",
+      "slug": "aplicativo_caa",
+      "entryPoint": "./src/App.js"
+    }
+}
+  

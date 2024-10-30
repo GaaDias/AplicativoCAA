@@ -32,7 +32,7 @@ function Home() {
             <img
               src={getRandomImage(card.id)}
               alt={card.label}
-              style={{ width: '100px', height: '100px' }}
+              style={{ width: '80px', height: '80px' }}
             />
             <p>{card.label}</p>
           </button>
