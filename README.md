@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 📱 Aplicativo CAA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicativo de Comunicação Aumentativa e Alternativa para Crianças com TEA
 
-## Available Scripts
+## ✨ Descrição
 
-In the project directory, you can run:
+**Aplicativo CAA** é uma ferramenta de comunicação alternativa voltada para crianças no espectro autista. Com uma interface amigável, permite que as crianças se comuniquem por meio de cards visuais e frases, facilitando a interação com familiares e cuidadores. O app funciona tanto online quanto offline, oferecendo uma experiência adaptativa conforme a conectividade.
 
-### `npm start`
+## 🧩 Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Cards de Comunicação**: Visualize cards com imagens e palavras/frases para facilitar a comunicação.
+- **Busca de Imagens**: Permite buscar e adicionar imagens da internet quando conectado.
+- **Acesso Offline**: Salva os cards favoritos para acesso sem internet.
+- **Personalização de Cards**: Adicione e personalize os cards de comunicação para se adaptar às necessidades da criança.
+- **Armazenamento em Nuvem e Local**: Imagens são armazenadas no dispositivo para acesso rápido, e links em nuvem são salvos para acesso entre dispositivos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias Utilizadas
 
-### `npm test`
+- **React Native**: Framework para desenvolvimento mobile multiplataforma.
+- **SQLite**: Banco de dados local e offline para armazenamento de dados estruturados.
+- **Supabase**: Plataforma em nuvem para sincronização de dados e armazenamento de imagens, além de funcionalidades de backend como autenticação.
+- **React Navigation**: Biblioteca para navegação entre telas no app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎨 Design e Interface
 
-### `npm run build`
+A interface foi projetada para ser colorida e intuitiva, com:
+- Ícones grandes e de fácil compreensão
+- Tipografia clara e simples
+- Navegação fluida para crianças e cuidadores
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🖥️ Como Usar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/GaaDias/Aplicativo_CAA.git
+   cd Aplicativo_CAA
+2. **Instale as dependências:**
+   ```bash
+   npm install
+3. **Configuração do Supabase:**
+ - Crie um projeto no Supabase.
+ - No painel do Supabase, configure um bucket para armazenar imagens e habilite a autenticação, se necessário.
+ - Adicione as credenciais (URL do Supabase e chave pública) ao arquivo **``.env``** do projeto:
+   ```bash
+   SUPABASE_URL=<sua_url_do_supabase>
+   SUPABASE_KEY=<sua_chave_publica_do_supabase>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Execute o aplicativo:**
+   ```bash
+   npx react-native run-android # ou run-ios
+ - No Expo Go, escaneie o QR Code para testar o app em um dispositivo móvel.
 
-### `npm run eject`
+## 📂 Estrutura de Pastas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```plaintext
+.
+├── src
+│   ├── components    # Componentes reutilizáveis
+│   ├── pages         # Telas do aplicativo
+│   ├── assets        # Imagens e ícones locais
+│   ├── navigation    # Configuração de navegação
+│   ├── services      # Serviços de API e funções auxiliares
+│   └── utils         # Utilitários e funções de suporte
+├── .gitignore
+├── App.js
+├── README.md
+└── package.json
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚠️ Nota Importante
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As instruções de uso deste README são fornecidas apenas para execução e desenvolvimento local com permissão do autor. Este projeto não possui licença, e o uso, modificação ou distribuição do código é restrito. Para solicitar autorização, entre em contato.
